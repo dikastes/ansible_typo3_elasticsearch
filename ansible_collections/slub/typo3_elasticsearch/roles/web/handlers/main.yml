@@ -1,0 +1,24 @@
+---
+# handlers file for web
+- name: Reload nftables
+  ansible.builtin.systemd:
+    name: nftables
+    state: reloaded
+
+- name: restart apache2
+  ansible.builtin.service:
+    name: apache2
+    state: restarted
+  become: true
+
+- name: restart nftables
+  ansible.builtin.service:
+    name: nftables
+    state: restarted
+  become: true
+
+- name: restart php
+  service:
+    name: "php{{ php_version }}-fpm"
+    state: restarted
+  become: true
