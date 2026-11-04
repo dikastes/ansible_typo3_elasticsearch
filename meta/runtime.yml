@@ -50,3 +50,5 @@
 #   group_name:
 #     - module1
 #     - module2
+collections:
+  - name: ansible.mysql
