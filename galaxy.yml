@@ -1,0 +1,28 @@
+namespace: "dikastes"
+
+name: "typo3_elasticsearch"
+
+version: "0.0.1"
+
+description: "Ansible role to install and configure a TYPO3 portal depending on elasticsearch"
+
+readme: "README.md"
+
+authors:
+  - "Matthias Schrinner"
+
+license:
+  - "MIT"
+
+tags:
+  - typo3
+  - elasticsearch
+  - search
+  - cms
+
+dependencies: {}
+
+repository: "https://github.com/dikastes/ansible_typo3_elasticsearch"
+documentation: "https://github.com/dikastes/ansible_typo3_elasticsearch/blob/master/README.md"
+homepage: "https://github.com/dikastes/ansible_typo3_elasticsearch"
+issues: "https://github.com/dikastes/ansible_typo3_elasticsearch/issues"
